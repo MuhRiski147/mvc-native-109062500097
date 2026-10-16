@@ -37,6 +37,7 @@ class Mahasiswa {
 
         $stmt = $this->db->prepare($sql);
         return $stmt->execute([
+            ':id' => $id,
             ':nim' => $data['nim'], 
             ':nama' => $data['nama'], 
             ':prodi' => $data['prodi']
