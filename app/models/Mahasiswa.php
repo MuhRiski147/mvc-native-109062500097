@@ -32,7 +32,8 @@ class Mahasiswa {
         $sql = 'UPDATE mahasiswa SET 
         nim = :nim, 
         nama = :nama, 
-        prodi = :prodi';
+        prodi = :prodi 
+        WHERE id = :id';
 
         $stmt = $this->db->prepare($sql);
         return $stmt->execute([
