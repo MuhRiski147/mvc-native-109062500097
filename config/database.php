@@ -9,7 +9,7 @@ class Database {
     {
         $dsn = "
         mysql:host={$this->host};
-        dbname={$this->$db};
+        dbname={$this->db};
         charset=utf8mb4";
 
         return new PDO($dsn, $this->user, $this->pass, [
